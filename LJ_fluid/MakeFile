@@ -1,0 +1,6 @@
+LJfluid: main.o fun.o
+	gcc -o LJfluid main.o fun.o -lm
+main.o: main.c lib.h
+	gcc -c main.c
+fun.o: fun.c lib.h
+	gcc -c fun.c
